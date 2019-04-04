@@ -1,0 +1,95 @@
+@import 'variables';
+
+// body{
+// 	background-image: url("images/background.jpg");
+// }
+
+#logo {
+	width: 100px;
+	height: 100px;
+	padding-top: 30px;
+	margin: 0 auto;
+}
+
+// .menu-images {
+// 	height: 100%;
+// 	width: 100%;
+// 	padding-left: 130px;
+// 	padding-top: 115px;
+// 	margin: 0 auto;
+// }
+
+*{
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+.container {
+	margin-left: 100px;
+	background-color: $mainColour;
+	height: 900px;
+}
+
+.col {
+	min-height: 100px;
+	float:left;
+	padding: 12px;
+	box-sizing: border-box;
+}
+
+.row::after {
+	clear:both;
+	display:block;
+	content:'';
+}
+
+$columns: 12;
+$columnWidth: 100% / $columns;
+@for $i from 1 through $columns {
+	.col#{$i}{
+		width: $columnWidth * $i;
+	}
+	.offset#{$i}{
+		margin-left: $columnWidth * $i;
+	}
+}
+
+.order {
+	padding-left: 100px;
+	background-color: $mainColour;
+	margin-top: 100px;
+	height: 600px;
+}
+
+h3 {
+	text-transform: uppercase;
+	font-family: $mainFont;
+	font-size: 30px;
+	margin: 0 auto;
+}
+
+.red {
+	background-color: $secondColour;
+}
+
+.block {
+	height: 200px;
+}
+
+.btn-pay {
+	height: 50px;
+	width: 100px;
+	background-color: $secondColour;
+	font-family: $mainFont;
+	border-radius: 20px;
+	font-size: 15px;
+	color: white;
+	font-weight: 1.25em;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+}
+
+.btn-pay:hover {
+	background-color: white;
+	color: black;
+}
