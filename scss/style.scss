@@ -128,6 +128,15 @@ h3 {
 	text-transform: uppercase;
 }
 
+.btn-remove {
+	background-color: $secondColour;
+	font-family: $mainFont;
+	height: 30px;
+	color: white;
+	text-transform: uppercase;
+	margin-left: 120px;
+}
+
 .item {
 	margin: 0 auto;
 }
@@ -137,6 +146,15 @@ h3 {
 	width: 175px;
 	font-size: 18px;
 	margin-left: 250px;
+}
+
+.fries-order {
+	width: 100%;
+	height: 100px;
+	background-color: white;
+	font-family: $mainFont;
+	padding-top: 10px;
+	padding-left: 10px;
 }
 
 h4 {
