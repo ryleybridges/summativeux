@@ -129,6 +129,9 @@ h3 {
 .bottom {
   margin-top: 50px; }
 
+.align {
+  margin-left: 45px; }
+
 .btn-pay {
   height: 50px;
   width: 100px;
@@ -137,14 +140,7 @@ h3 {
   border-radius: 20px;
   font-size: 15px;
   color: white;
-  font-weight: 1.25em;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  align-content: bottom; }
-
-.btn-pay:hover {
-  background-color: white;
-  color: black; }
+  font-weight: 1.25em; }
 
 .btn-back {
   height: 50px;
@@ -155,8 +151,6 @@ h3 {
   font-size: 15px;
   color: white;
   font-weight: 1.25em;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
   margin-top: 80px;
   margin-left: 80px;
   text-transform: uppercase; }
@@ -170,8 +164,6 @@ h3 {
   font-size: 20px;
   color: white;
   font-weight: 1.25em;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
   margin-top: 10px;
   margin: 0 auto;
   text-transform: uppercase; }
@@ -182,7 +174,7 @@ h3 {
   height: 30px;
   color: white;
   text-transform: uppercase;
-  margin-left: 120px; }
+  margin-left: 140px; }
 
 .btn-cancel {
   height: 75px;
@@ -206,12 +198,14 @@ h3 {
   margin-left: 250px; }
 
 .fries-order {
-  width: 100%;
+  width: 110%;
   height: 100px;
   background-color: white;
   font-family: "Roboto", sans-serif;
   padding-top: 10px;
-  padding-left: 10px; }
+  padding-left: 10px;
+  margin-left: -55px;
+  margin-top: 15px; }
 
 h4 {
   font-family: "Roboto", sans-serif;
@@ -242,7 +236,9 @@ h2 {
   color: white;
   background-color: #DB3535;
   font-family: "Roboto", sans-serif;
-  border-radius: 20px; }
+  border-radius: 20px;
+  margin: 0 auto;
+  position: relative; }
 
 form {
   font-size: 23px;
