@@ -28,6 +28,11 @@ body{
 	height: 900px;
 }
 
+.paycontainer {
+  background-color: $mainColour;
+  height: 900px;
+}
+
 .col {
 	min-height: 100px;
 	float:left;
@@ -89,6 +94,7 @@ h3 {
 	font-weight: 1.25em;
 	-webkit-transition-duration: 0.3s;
 	transition-duration: 0.3s;
+	align-content: bottom;
 }
 
 .btn-pay:hover {
@@ -137,6 +143,19 @@ h3 {
 	margin-left: 120px;
 }
 
+.btn-cancel {
+	height: 75px;
+	width: 200px;
+	background-color: $secondColour;
+	font-family: $mainFont;
+	font-size: 18px;
+	color: white;
+	margin-top: 45px;
+	margin-left: 45px;
+	border-radius: 20px;
+	text-transform: uppercase;
+}
+
 .item {
 	margin: 0 auto;
 }
@@ -162,6 +181,50 @@ h4 {
 	text-align: center;
 	font-size: 30px;
 	margin-top: -20px;
+}
+
+h2 {
+	font-family: $mainFont;
+	font-size: 50px;
+	text-align: center;
+}
+
+.btn-switch {
+	align-content: center;
+	width: 90px;
+	height: 50px;
+	color: white;
+	font-family: $mainFont;
+	border-radius: 20px;
+	background-color: $secondColour;
+	align: center;
+	margin-top: 10px;
+}
+
+.btn-final {
+	width: 165px;
+	height: 75px;
+	font-size: 25px;
+	color: white;
+	background-color: $secondColour;
+	font-family: $mainFont;
+	border-radius: 20px;
+}
+
+form {
+	font-size: 23px;
+	text-align: center;
+	font-family: $mainFont;
+}
+
+.input {
+	width: 250px;
+	height: 30px;
+}
+
+.date {
+	font-size: 18px;
+	font-family: $mainFont;
 }
 
 @media screen and (max-width:375px){

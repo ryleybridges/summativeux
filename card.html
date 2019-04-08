@@ -7,24 +7,44 @@
 
 	</head>
 	<body>
-		<div class="container col7 colS12 col">
+		<div class="paycontainer offset3 col6 colS12 col">
 			<div class="row">
 				<div class="col col5">
-					<a href="snacks.html"><button class="btn-back" type="button">Back</button></a>
+					<a href="index.html"><button class="btn-cancel" type="button">Cancel Order</button></a>
 				</div>
-					<a href="index.html"><img class="logo" src="images/logo.png" alt="Goldie Milk Bar & Eatery logo" width="200px" height="200px"></a>
-				<div class="col col5"></div>
+				<a href="index.html"><img class="logo" src="images/logo.png" alt="Goldie Milk Bar & Eatery logo" width="200px" height="200px"></a>
+			</div>
+			<h2>Card</h2>
+			<div class="row">
+				<div class="col4 col offset1">
+					<form>
+						Card Number:<br>
+						<input type="text" name="cardnumber" class="input"><br><br>
+						Cardholder:<br>
+						<input type="text" name="cardholder" class="input"><br><br>
+						CVV:<br>
+						<input type="text" name="cvv" class="input"><br><br>
+						Expiry Date:<br>
+						<input type="date" name="expirydate" class="date">
+					</form>
+				</div>
+				<div class="col5 col offset1">
+					<form>
+						Email:<br>
+						<input type="text" name="email" class="input"><br><br>
+						Name:<br>
+						<input type="text" name="name" class="input"><br><br>
+						When are you wanting your order to be ready?<br>
+						<input type="radio" name="time" value="now"> Now<br>
+						<input type="radio" name="time" value="time"> <input type="time" name="timeselect" min="11:00" max="21:00">
+					</form>
+				</div>
+			</div>
+			<div class="row">
+				<button class="btn-final" type="button">Place Order</button><br>
+				<button class="btn-switch" type="button">Switch to Cash</button>
 			</div>
 		</div>
-
-		<!-- <div class="order offset1 col col2">
-			<h3>Order</h3>
-			<div class="fries-order" id="fries-order">
-				<p><b>Longest Fries In Town</b><br>Garlic Salt<br>Kewpie Mayo</p>
-				<button class="btn-remove" type="button">Remove</button>
-			</div> <button class="btn-pay" type="button">CASH</button>
-			<button class="btn-pay" type="button">CARD</button> -->
-		<!-- </div> -->
 		<script src="js/script.js"></script>
 	</body>
 </html>
