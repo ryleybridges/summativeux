@@ -168,7 +168,6 @@ h3 {
 	padding-left: 10px;
 	margin-left: -55px;
 	margin-top: 15px;
-
 }
 
 h4 {
@@ -205,7 +204,6 @@ h2 {
 	font-family: $mainFont;
 	border-radius: 20px;
 	margin: 0 auto;
-	position: relative;
 }
 
 form {
@@ -216,7 +214,7 @@ form {
 
 .input {
 	width: 250px;
-	height: 30px;
+	height: 28px;
 }
 
 .date {
@@ -225,51 +223,14 @@ form {
 }
 
 @media screen and (max-width:375px){
-	.colS12 {
-		width: 100%;
-	}
-
-	.colS11 {
-		width: 91.66%;
-	}
-
-	.colS10 {
-		width: 83.33%;
-	}
-
-	.colS9 {
-		width: 75%;
-	}
-
-	.colS8 {
-		width: 66.66%;
-	}
-
-	.colS7 {
-		width: 58.33%;
-	}
-
-	.col6 {
-		width: 50%;
-	}
-
-	.col5 {
-		width: 41.67%;
-	}
-
-	.colS4 {
-		width: 25%;
-	}
-
-	.col3 {
-		width: 25%;
-	}
-
-	.col2 {
-		width: 16.66%;
-	}
-
-	.col1 {
-		width: 8.33%;
-	}
+	$columns: 12;
+	$columnWidth: 100% / $columns;
+	@for $i from 1 through $columns {
+		.colS#{$i}{
+			width: $columnWidth * $i;
+		}
+		.offsetS#{$i}{
+			margin-left: $columnWidth * $i;
+		}
+}
 }

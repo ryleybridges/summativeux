@@ -237,8 +237,7 @@ h2 {
   background-color: #DB3535;
   font-family: "Roboto", sans-serif;
   border-radius: 20px;
-  margin: 0 auto;
-  position: relative; }
+  margin: 0 auto; }
 
 form {
   font-size: 23px;
@@ -247,47 +246,83 @@ form {
 
 .input {
   width: 250px;
-  height: 30px; }
+  height: 28px; }
 
 .date {
   font-size: 18px;
   font-family: "Roboto", sans-serif; }
 
 @media screen and (max-width: 375px) {
-  .colS12 {
-    width: 100%; }
+  .colS1 {
+    width: 8.3333333333%; }
 
-  .colS11 {
-    width: 91.66%; }
+  .offsetS1 {
+    margin-left: 8.3333333333%; }
 
-  .colS10 {
-    width: 83.33%; }
+  .colS2 {
+    width: 16.6666666667%; }
+
+  .offsetS2 {
+    margin-left: 16.6666666667%; }
+
+  .colS3 {
+    width: 25%; }
+
+  .offsetS3 {
+    margin-left: 25%; }
+
+  .colS4 {
+    width: 33.3333333333%; }
+
+  .offsetS4 {
+    margin-left: 33.3333333333%; }
+
+  .colS5 {
+    width: 41.6666666667%; }
+
+  .offsetS5 {
+    margin-left: 41.6666666667%; }
+
+  .colS6 {
+    width: 50%; }
+
+  .offsetS6 {
+    margin-left: 50%; }
+
+  .colS7 {
+    width: 58.3333333333%; }
+
+  .offsetS7 {
+    margin-left: 58.3333333333%; }
+
+  .colS8 {
+    width: 66.6666666667%; }
+
+  .offsetS8 {
+    margin-left: 66.6666666667%; }
 
   .colS9 {
     width: 75%; }
 
-  .colS8 {
-    width: 66.66%; }
+  .offsetS9 {
+    margin-left: 75%; }
 
-  .colS7 {
-    width: 58.33%; }
+  .colS10 {
+    width: 83.3333333333%; }
 
-  .col6 {
-    width: 50%; }
+  .offsetS10 {
+    margin-left: 83.3333333333%; }
 
-  .col5 {
-    width: 41.67%; }
+  .colS11 {
+    width: 91.6666666667%; }
 
-  .colS4 {
-    width: 25%; }
+  .offsetS11 {
+    margin-left: 91.6666666667%; }
 
-  .col3 {
-    width: 25%; }
+  .colS12 {
+    width: 100%; }
 
-  .col2 {
-    width: 16.66%; }
-
-  .col1 {
-    width: 8.33%; } }
+  .offsetS12 {
+    margin-left: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
