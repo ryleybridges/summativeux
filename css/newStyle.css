@@ -1,0 +1,295 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+.row::after {
+  clear: both;
+  display: block;
+  content: ''; }
+
+.fullRow {
+  height: 100%; }
+
+.col {
+  float: left;
+  padding-right: 15px;
+  min-height: 10px;
+  padding-left: 15px; }
+
+.col1 {
+  width: 8.3333333333%; }
+
+.offset1 {
+  margin-left: 8.3333333333%; }
+
+.col2 {
+  width: 16.6666666667%; }
+
+.offset2 {
+  margin-left: 16.6666666667%; }
+
+.col3 {
+  width: 25%; }
+
+.offset3 {
+  margin-left: 25%; }
+
+.col4 {
+  width: 33.3333333333%; }
+
+.offset4 {
+  margin-left: 33.3333333333%; }
+
+.col5 {
+  width: 41.6666666667%; }
+
+.offset5 {
+  margin-left: 41.6666666667%; }
+
+.col6 {
+  width: 50%; }
+
+.offset6 {
+  margin-left: 50%; }
+
+.col7 {
+  width: 58.3333333333%; }
+
+.offset7 {
+  margin-left: 58.3333333333%; }
+
+.col8 {
+  width: 66.6666666667%; }
+
+.offset8 {
+  margin-left: 66.6666666667%; }
+
+.col9 {
+  width: 75%; }
+
+.offset9 {
+  margin-left: 75%; }
+
+.col10 {
+  width: 83.3333333333%; }
+
+.offset10 {
+  margin-left: 83.3333333333%; }
+
+.col11 {
+  width: 91.6666666667%; }
+
+.offset11 {
+  margin-left: 91.6666666667%; }
+
+.col12 {
+  width: 100%; }
+
+.offset12 {
+  margin-left: 100%; }
+
+@media (min-width: 768px) {
+  .colT1 {
+    width: 8.3333333333%; }
+
+  .offsetT1 {
+    margin-left: 8.3333333333%; }
+
+  .colT2 {
+    width: 16.6666666667%; }
+
+  .offsetT2 {
+    margin-left: 16.6666666667%; }
+
+  .colT3 {
+    width: 25%; }
+
+  .offsetT3 {
+    margin-left: 25%; }
+
+  .colT4 {
+    width: 33.3333333333%; }
+
+  .offsetT4 {
+    margin-left: 33.3333333333%; }
+
+  .colT5 {
+    width: 41.6666666667%; }
+
+  .offsetT5 {
+    margin-left: 41.6666666667%; }
+
+  .colT6 {
+    width: 50%; }
+
+  .offsetT6 {
+    margin-left: 50%; }
+
+  .colT7 {
+    width: 58.3333333333%; }
+
+  .offsetT7 {
+    margin-left: 58.3333333333%; }
+
+  .colT8 {
+    width: 66.6666666667%; }
+
+  .offsetT8 {
+    margin-left: 66.6666666667%; }
+
+  .colT9 {
+    width: 75%; }
+
+  .offsetT9 {
+    margin-left: 75%; }
+
+  .colT10 {
+    width: 83.3333333333%; }
+
+  .offsetT10 {
+    margin-left: 83.3333333333%; }
+
+  .colT11 {
+    width: 91.6666666667%; }
+
+  .offsetT11 {
+    margin-left: 91.6666666667%; }
+
+  .colT12 {
+    width: 100%; }
+
+  .offsetT12 {
+    margin-left: 100%; } }
+@media (min-width: 1200px) {
+  .colD1 {
+    width: 8.3333333333%; }
+
+  .offsetD1 {
+    margin-left: 8.3333333333%; }
+
+  .colD2 {
+    width: 16.6666666667%; }
+
+  .offsetD2 {
+    margin-left: 16.6666666667%; }
+
+  .colD3 {
+    width: 25%; }
+
+  .offsetD3 {
+    margin-left: 25%; }
+
+  .colD4 {
+    width: 33.3333333333%; }
+
+  .offsetD4 {
+    margin-left: 33.3333333333%; }
+
+  .colD5 {
+    width: 41.6666666667%; }
+
+  .offsetD5 {
+    margin-left: 41.6666666667%; }
+
+  .colD6 {
+    width: 50%; }
+
+  .offsetD6 {
+    margin-left: 50%; }
+
+  .colD7 {
+    width: 58.3333333333%; }
+
+  .offsetD7 {
+    margin-left: 58.3333333333%; }
+
+  .colD8 {
+    width: 66.6666666667%; }
+
+  .offsetD8 {
+    margin-left: 66.6666666667%; }
+
+  .colD9 {
+    width: 75%; }
+
+  .offsetD9 {
+    margin-left: 75%; }
+
+  .colD10 {
+    width: 83.3333333333%; }
+
+  .offsetD10 {
+    margin-left: 83.3333333333%; }
+
+  .colD11 {
+    width: 91.6666666667%; }
+
+  .offsetD11 {
+    margin-left: 91.6666666667%; }
+
+  .colD12 {
+    width: 100%; }
+
+  .offsetD12 {
+    margin-left: 100%; } }
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: grey;
+  overflow: hidden; }
+
+img {
+  width: 100%; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%; }
+  .container .logoRow {
+    height: 30%;
+    display: flex;
+    align-items: center; }
+    .container .logoRow .col {
+      color: white;
+      text-align: center; }
+      .container .logoRow .col .btn-return {
+        display: none; }
+  .container .mainRow {
+    height: 70%; }
+  .container .main {
+    padding: 10px;
+    background-color: #FFEFB7;
+    height: 100%; }
+    .container .main .logo {
+      height: 20%; }
+    .container .main .menuCats {
+      height: 25%;
+      padding: 10px; }
+      .container .main .menuCats .menuMeals {
+        height: 100%;
+        background-image: url("../images/bubbles.png");
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+  .container .cart {
+    display: none; }
+
+@media screen and (min-width: 768px) {
+  .container .fullRow {
+    display: flex;
+    align-items: center; }
+  .container .main .menuCats {
+    height: 50%; }
+  .container .main .logoRow .col i {
+    display: none; }
+  .container .main .logoRow .col .btn-return {
+    display: block; }
+  .container .cart {
+    display: block;
+    height: 80%; }
+    .container .cart .cartContent {
+      background-color: #FFEFB7;
+      height: 100%; } }
+
+/*# sourceMappingURL=newStyle.css.map */

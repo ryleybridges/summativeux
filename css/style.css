@@ -1,30 +1,3 @@
-body {
-  background-image: url("images/background.jpg"); }
-
-#logo {
-  width: 100px;
-  height: 100px;
-  padding-top: 30px;
-  margin: 0 auto; }
-
-.menu-images {
-  height: 100%;
-  width: 100%;
-  margin: 0 auto; }
-
-* {
-  margin: 0 auto;
-  box-sizing: border-box; }
-
-.container {
-  margin-left: 100px;
-  background-color: #FFEFB7;
-  height: 900px; }
-
-.paycontainer {
-  background-color: #FFEFB7;
-  height: 900px; }
-
 .col {
   min-height: 100px;
   float: left;
@@ -108,11 +81,112 @@ body {
 .offset12 {
   margin-left: 100%; }
 
-.order {
-  padding-left: 100px;
+@media screen and (max-width: 375px) {
+  .colS1 {
+    width: 8.3333333333%; }
+
+  .offsetS1 {
+    margin-left: 8.3333333333%; }
+
+  .colS2 {
+    width: 16.6666666667%; }
+
+  .offsetS2 {
+    margin-left: 16.6666666667%; }
+
+  .colS3 {
+    width: 25%; }
+
+  .offsetS3 {
+    margin-left: 25%; }
+
+  .colS4 {
+    width: 33.3333333333%; }
+
+  .offsetS4 {
+    margin-left: 33.3333333333%; }
+
+  .colS5 {
+    width: 41.6666666667%; }
+
+  .offsetS5 {
+    margin-left: 41.6666666667%; }
+
+  .colS6 {
+    width: 50%; }
+
+  .offsetS6 {
+    margin-left: 50%; }
+
+  .colS7 {
+    width: 58.3333333333%; }
+
+  .offsetS7 {
+    margin-left: 58.3333333333%; }
+
+  .colS8 {
+    width: 66.6666666667%; }
+
+  .offsetS8 {
+    margin-left: 66.6666666667%; }
+
+  .colS9 {
+    width: 75%; }
+
+  .offsetS9 {
+    margin-left: 75%; }
+
+  .colS10 {
+    width: 83.3333333333%; }
+
+  .offsetS10 {
+    margin-left: 83.3333333333%; }
+
+  .colS11 {
+    width: 91.6666666667%; }
+
+  .offsetS11 {
+    margin-left: 91.6666666667%; }
+
+  .colS12 {
+    width: 100%; }
+
+  .offsetS12 {
+    margin-left: 100%; } }
+body {
+  background-image: url("images/background.jpg"); }
+
+#logo {
+  width: 100px;
+  height: 100px;
+  padding-top: 30px;
+  margin: 0 auto; }
+
+.menu-images {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto; }
+
+* {
+  margin: 0 auto;
+  box-sizing: border-box; }
+
+.container {
+  margin-left: 100px;
   background-color: #FFEFB7;
-  margin-top: 100px;
-  height: 600px; }
+  height: 900px; }
+
+.paycontainer {
+  background-color: #FFEFB7;
+  height: 900px; }
+
+.center {
+  text-align: center; }
+
+.order {
+  background-color: #FFEFB7;
+  height: 600px;
+  position: relative; }
 
 h3 {
   text-transform: uppercase;
@@ -132,7 +206,7 @@ h3 {
 .align {
   margin-left: 45px; }
 
-.btn-pay {
+.btn {
   height: 50px;
   width: 100px;
   background-color: #DB3535;
@@ -142,15 +216,12 @@ h3 {
   color: white;
   font-weight: 1.25em; }
 
+.btn-pay {
+  background-color: blue;
+  position: absolute;
+  bottom: 0; }
+
 .btn-back {
-  height: 50px;
-  width: 100px;
-  background-color: #DB3535;
-  font-family: "Roboto", sans-serif;
-  border-radius: 20px;
-  font-size: 15px;
-  color: white;
-  font-weight: 1.25em;
   margin-top: 80px;
   margin-left: 80px;
   text-transform: uppercase; }
@@ -251,78 +322,5 @@ form {
 .date {
   font-size: 18px;
   font-family: "Roboto", sans-serif; }
-
-@media screen and (max-width: 375px) {
-  .colS1 {
-    width: 8.3333333333%; }
-
-  .offsetS1 {
-    margin-left: 8.3333333333%; }
-
-  .colS2 {
-    width: 16.6666666667%; }
-
-  .offsetS2 {
-    margin-left: 16.6666666667%; }
-
-  .colS3 {
-    width: 25%; }
-
-  .offsetS3 {
-    margin-left: 25%; }
-
-  .colS4 {
-    width: 33.3333333333%; }
-
-  .offsetS4 {
-    margin-left: 33.3333333333%; }
-
-  .colS5 {
-    width: 41.6666666667%; }
-
-  .offsetS5 {
-    margin-left: 41.6666666667%; }
-
-  .colS6 {
-    width: 50%; }
-
-  .offsetS6 {
-    margin-left: 50%; }
-
-  .colS7 {
-    width: 58.3333333333%; }
-
-  .offsetS7 {
-    margin-left: 58.3333333333%; }
-
-  .colS8 {
-    width: 66.6666666667%; }
-
-  .offsetS8 {
-    margin-left: 66.6666666667%; }
-
-  .colS9 {
-    width: 75%; }
-
-  .offsetS9 {
-    margin-left: 75%; }
-
-  .colS10 {
-    width: 83.3333333333%; }
-
-  .offsetS10 {
-    margin-left: 83.3333333333%; }
-
-  .colS11 {
-    width: 91.6666666667%; }
-
-  .offsetS11 {
-    margin-left: 91.6666666667%; }
-
-  .colS12 {
-    width: 100%; }
-
-  .offsetS12 {
-    margin-left: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

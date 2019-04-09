@@ -1,5 +1,42 @@
 @import 'variables';
 
+.col {
+	min-height: 100px;
+	float:left;
+	padding: 12px;
+	box-sizing: border-box;
+}
+
+.row::after {
+	clear:both;
+	display:block;
+	content:'';
+}
+
+$columns: 12;
+$columnWidth: 100% / $columns;
+@for $i from 1 through $columns {
+	.col#{$i}{
+		width: $columnWidth * $i;
+	}
+	.offset#{$i}{
+		margin-left: $columnWidth * $i;
+	}
+}
+
+@media screen and (max-width:375px){
+	$columns: 12;
+	$columnWidth: 100% / $columns;
+	@for $i from 1 through $columns {
+		.colS#{$i}{
+			width: $columnWidth * $i;
+		}
+		.offsetS#{$i}{
+			margin-left: $columnWidth * $i;
+		}
+}
+}
+
 body{
 	background-image: url("images/background.jpg");
 }
@@ -33,35 +70,14 @@ body{
   height: 900px;
 }
 
-.col {
-	min-height: 100px;
-	float:left;
-	padding: 12px;
-	box-sizing: border-box;
-}
-
-.row::after {
-	clear:both;
-	display:block;
-	content:'';
-}
-
-$columns: 12;
-$columnWidth: 100% / $columns;
-@for $i from 1 through $columns {
-	.col#{$i}{
-		width: $columnWidth * $i;
-	}
-	.offset#{$i}{
-		margin-left: $columnWidth * $i;
-	}
+.center{
+	text-align: center;
 }
 
 .order {
-	padding-left: 100px;
 	background-color: $mainColour;
-	margin-top: 100px;
 	height: 600px;
+	position: relative;
 }
 
 h3 {
@@ -87,7 +103,7 @@ h3 {
 	margin-left: 45px;
 }
 
-.btn-pay {
+.btn{
 	height: 50px;
 	width: 100px;
 	background-color: $secondColour;
@@ -98,15 +114,13 @@ h3 {
 	font-weight: 1.25em;
 }
 
+.btn-pay {
+	background-color: blue;
+	position: absolute;
+	bottom: 0;
+}
+
 .btn-back {
-	height: 50px;
-	width: 100px;
-	background-color: $secondColour;
-	font-family: $mainFont;
-	border-radius: 20px;
-	font-size: 15px;
-	color: white;
-	font-weight: 1.25em;
 	margin-top: 80px;
 	margin-left: 80px;
 	text-transform: uppercase;
@@ -222,15 +236,3 @@ form {
 	font-family: $mainFont;
 }
 
-@media screen and (max-width:375px){
-	$columns: 12;
-	$columnWidth: 100% / $columns;
-	@for $i from 1 through $columns {
-		.colS#{$i}{
-			width: $columnWidth * $i;
-		}
-		.offsetS#{$i}{
-			margin-left: $columnWidth * $i;
-		}
-}
-}

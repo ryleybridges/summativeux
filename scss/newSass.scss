@@ -1,0 +1,175 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+$mainColour: #FFEFB7;
+$columns: 12;
+$columnWidth: 100% / $columns;
+
+$mdWidth: 768px;
+$lgWidth: 1200px;
+
+.row{
+    
+    &::after{
+        clear: both;
+        display: block;
+        content: '';
+    }
+}
+
+.fullRow{
+	height: 100%;
+}
+
+.col{
+	// padding-bottom: 15px;
+    float: left;
+    padding-right: 15px;
+    min-height: 10px;
+    padding-left: 15px;
+}
+
+@for $i from 1 through $columns{
+    .col#{$i}{
+        width:$columnWidth * $i;
+    }
+
+    .offset#{$i}{
+        margin-left:$columnWidth * $i;
+    }
+}
+
+@media (min-width: $mdWidth) {
+    @for $i from 1 through $columns{
+        .colT#{$i}{
+            width:$columnWidth * $i;
+        }
+
+        .offsetT#{$i}{
+            margin-left:$columnWidth * $i;
+        }
+    }
+}
+
+@media (min-width: $lgWidth) {
+    @for $i from 1 through $columns{
+        .colD#{$i}{
+            width:$columnWidth * $i;
+        }
+
+        .offsetD#{$i}{
+            margin-left:$columnWidth * $i;
+        }
+    }
+}
+
+
+body{
+	height: 100vh;
+	width: 100vw;
+	background-color: grey;
+	overflow: hidden;
+}
+
+img{
+	width: 100%;
+}
+
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 100%;
+	.logoRow{
+		height: 30%;
+		display: flex;
+		align-items: center;
+		.col{
+			color: white;
+			text-align: center;
+			.btn-return{
+				display: none;
+			}
+		}
+	}
+
+	.mainRow{
+		height: 70%;
+	}
+
+	.main{
+		padding: 10px;
+		background-color: $mainColour;
+		height: 100%;
+		.logo{
+			height: 20%;
+		}
+		.menuCats{
+			// background-color: red;
+			height: 25%;
+			padding: 10px;
+			.menuMeals{
+				height: 100%;
+				background-image: url('../images/bubbles.png');
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+	}
+
+
+	.cart{
+		display: none;
+	}
+
+
+
+}
+
+@media screen and (min-width: $mdWidth){
+	.container{
+		.fullRow{
+			display: flex;
+			align-items: center;
+		}
+		.main{
+			.menuCats{
+				height: 50%;
+			}
+					.logoRow{
+			.col{
+				i{
+					display: none;
+				}
+				.btn-return{
+					display: block;
+				}
+			}
+		}
+		}
+
+
+
+		.cart{
+			display: block;
+			height: 80%;
+			
+			.cartContent{
+				background-color: $mainColour;
+				height: 100%;
+			}
+		}
+	}
+
+}
+
+
+
+
+
+
+
+
+
