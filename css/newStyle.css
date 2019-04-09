@@ -242,6 +242,9 @@ body {
 img {
   width: 100%; }
 
+h4 {
+  text-align: center; }
+
 .container {
   max-width: 1200px;
   margin: 0 auto;

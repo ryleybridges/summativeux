@@ -4,6 +4,7 @@
 	box-sizing: border-box;
 }
 $mainColour: #FFEFB7;
+$mainFont: 'Roboto', sans-serif;
 $columns: 12;
 $columnWidth: 100% / $columns;
 
@@ -75,6 +76,11 @@ body{
 
 img{
 	width: 100%;
+}
+
+h4 {
+	text-align: center;
+	
 }
 
 .container{
