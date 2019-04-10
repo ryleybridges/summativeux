@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+
+
 *{
 	padding: 0;
 	margin: 0;
@@ -117,10 +120,53 @@ h4 {
 			padding: 10px;
 			.menuMeals{
 				height: 100%;
-				background-image: url('../images/bubbles.png');
+				background-image: url('../images/hotdogs.png');
 				display: flex;
 				justify-content: center;
 				align-items: center;
+				font-family: $mainFont;
+				color: white;
+				font-size: 25px;
+			}
+			.menuSnacks {
+				background-image: url('../images/fries2.png');
+				height: 100%;
+				background-repeat: no-repeat;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-family: $mainFont;
+				color: white;
+				font-size: 25px;
+				
+				a{
+				text-decoration: none;
+				color: white;
+			}
+
+			}
+
+			.menuDrinks {
+				background-image: url('../images/shakes.png');
+				height: 100%;
+				background-repeat: no-repeat;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-family: $mainFont;
+				color: white;
+				font-size: 25px;
+			}
+			.menuDesserts {
+				background-image: url('../images/waffles.png');
+				height: 100%;
+				background-repeat: no-repeat;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-family: $mainFont;
+				color: white;
+				font-size: 25px;
 			}
 		}
 	}

@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Fjalla+One");
 * {
   padding: 0;
   margin: 0;
@@ -275,43 +274,7 @@ h4 {
         background-image: url("../images/hotdogs.png");
         display: flex;
         justify-content: center;
-        align-items: center;
-        font-family: "Roboto", sans-serif;
-        color: white;
-        font-size: 25px; }
-      .container .main .menuCats .menuSnacks {
-        background-image: url("../images/fries2.png");
-        height: 100%;
-        background-repeat: no-repeat;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: "Roboto", sans-serif;
-        color: white;
-        font-size: 25px; }
-        .container .main .menuCats .menuSnacks a {
-          text-decoration: none;
-          color: white; }
-      .container .main .menuCats .menuDrinks {
-        background-image: url("../images/shakes.png");
-        height: 100%;
-        background-repeat: no-repeat;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: "Roboto", sans-serif;
-        color: white;
-        font-size: 25px; }
-      .container .main .menuCats .menuDesserts {
-        background-image: url("../images/waffles.png");
-        height: 100%;
-        background-repeat: no-repeat;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: "Roboto", sans-serif;
-        color: white;
-        font-size: 25px; }
+        align-items: center; }
   .container .cart {
     display: none; }
 
@@ -332,4 +295,4 @@ h4 {
       background-color: #FFEFB7;
       height: 100%; } }
 
-/*# sourceMappingURL=newStyle.css.map */
+/*# sourceMappingURL=newSass.css.map */
