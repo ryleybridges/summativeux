@@ -124,9 +124,8 @@ h4 {
 			// background-color: red;
 			height: 25%;
 			padding: 10px;
-			.menuMeals{
+			.menu{
 				height: 100%;
-				background-image: url('../images/hotdogs.png');
 				display: flex;
 				justify-content: center;
 				align-items: center;
@@ -134,18 +133,15 @@ h4 {
 				color: white;
 				font-size: 25px;
 				text-transform: uppercase;
-			}
-			.menuSnacks {
-				background-image: url('../images/fries2.png');
-				height: 100%;
 				background-repeat: no-repeat;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				font-family: $mainFont;
-				color: white;
-				font-size: 25px;
-				text-transform: uppercase;
+			}
+
+			.meals {
+				background-image: url('../images/hotdogs.png');
+			}
+
+			.snacks {
+				background-image: url('../images/fries2.png');
 				
 				a{
 				text-decoration: none;
@@ -154,29 +150,28 @@ h4 {
 
 			}
 
-			.menuDrinks {
+			.drinks {
 				background-image: url('../images/shakes.png');
-				height: 100%;
-				background-repeat: no-repeat;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				font-family: $mainFont;
-				color: white;
-				font-size: 25px;
-				text-transform: uppercase;
 			}
-			.menuDesserts {
+
+			.dessert {
 				background-image: url('../images/waffles.png');
-				height: 100%;
-				background-repeat: no-repeat;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				font-family: $mainFont;
-				color: white;
-				font-size: 25px;
-				text-transform: uppercase;
+			}
+
+			.chicken {
+				background-image: url('../images/chicken.png');
+			}
+
+			.fries {
+				background-image: url('../images/fries2.png');
+				a {
+					text-decoration: none;
+					color: white;
+				}
+			}
+
+			.calamari {
+				background-image: url('../images/calamari.png');
 			}
 		}
 	}
@@ -232,13 +227,15 @@ h4 {
 					font-family: $mainFont;
 				}
 
-				.btn-pay {
+				.btn {
 					background-color: $mainColour;
 					color: white;
 					font-family: $mainFont;
 					height: 100%;
 					width: 100%;
 					text-decoration: none;
+					display: flex;
+					align-content: center;
 				}
 			}
 		}

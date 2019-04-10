@@ -282,52 +282,36 @@ h4 {
     .container .main .menuCats {
       height: 25%;
       padding: 10px; }
-      .container .main .menuCats .menuMeals {
+      .container .main .menuCats .menu {
         height: 100%;
-        background-image: url("../images/hotdogs.png");
         display: flex;
         justify-content: center;
         align-items: center;
         font-family: "Roboto", sans-serif;
         color: white;
         font-size: 25px;
-        text-transform: uppercase; }
-      .container .main .menuCats .menuSnacks {
-        background-image: url("../images/fries2.png");
-        height: 100%;
-        background-repeat: no-repeat;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: "Roboto", sans-serif;
-        color: white;
-        font-size: 25px;
-        text-transform: uppercase; }
-        .container .main .menuCats .menuSnacks a {
+        text-transform: uppercase;
+        background-repeat: no-repeat; }
+      .container .main .menuCats .meals {
+        background-image: url("../images/hotdogs.png"); }
+      .container .main .menuCats .snacks {
+        background-image: url("../images/fries2.png"); }
+        .container .main .menuCats .snacks a {
           text-decoration: none;
           color: white; }
-      .container .main .menuCats .menuDrinks {
-        background-image: url("../images/shakes.png");
-        height: 100%;
-        background-repeat: no-repeat;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: "Roboto", sans-serif;
-        color: white;
-        font-size: 25px;
-        text-transform: uppercase; }
-      .container .main .menuCats .menuDesserts {
-        background-image: url("../images/waffles.png");
-        height: 100%;
-        background-repeat: no-repeat;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: "Roboto", sans-serif;
-        color: white;
-        font-size: 25px;
-        text-transform: uppercase; }
+      .container .main .menuCats .drinks {
+        background-image: url("../images/shakes.png"); }
+      .container .main .menuCats .dessert {
+        background-image: url("../images/waffles.png"); }
+      .container .main .menuCats .chicken {
+        background-image: url("../images/chicken.png"); }
+      .container .main .menuCats .fries {
+        background-image: url("../images/fries2.png"); }
+        .container .main .menuCats .fries a {
+          text-decoration: none;
+          color: white; }
+      .container .main .menuCats .calamari {
+        background-image: url("../images/calamari.png"); }
   .container .cart {
     display: none; }
 
@@ -355,12 +339,14 @@ h4 {
         text-align: center;
         font-size: 15px;
         font-family: "Roboto", sans-serif; }
-      .container .cart .cartContent .btn-pay {
+      .container .cart .cartContent .btn {
         background-color: #FFEFB7;
         color: white;
         font-family: "Roboto", sans-serif;
         height: 100%;
         width: 100%;
-        text-decoration: none; } }
+        text-decoration: none;
+        display: flex;
+        align-content: center; } }
 
 /*# sourceMappingURL=newStyle.css.map */

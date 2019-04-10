@@ -1,37 +1,77 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link rel="stylesheet" href="css/style.css">
-		<meta charset="utf-8">
-		<script src="js/jquery-3.3.1.js"> </script>
-	</head>
-	<body>
-		<div class="container col7 col">
-			<div class="row">
-				<div class="col col5">
-					<a href="index.html"><button class="btn btn-back" type="button">Back</button></a>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Snacks - Goldie Milk Bar & Eatery</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<script src="js/jquery-3.3.1.js"> </script>
+	<link rel="stylesheet" type="text/css" href="css/newStyle.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row fullRow">
+			<div class="col col12 colT8 main">
+				<div class="row logoRow">
+					<div class="col col3 colT4">
+						<i class="fas fa-chevron-left"></i>
+						<button class="btn btn-return">Back</button>
+					</div>
+					<div class="col col6 colT4">
+						<a href="#">
+							<img class="logo" src="images/logo.png" alt="Goldie Milk Bar & Eatery logo">
+						</a>
+					</div>
+					<div class="col col3 colT4">
+						<i class="fas fa-shopping-cart"></i>
+					</div>
 				</div>
-					<a href="index.html"><img class="logo" src="images/logo.png" alt="Goldie Milk Bar & Eatery logo" width="200px" height="200px"></a>
-				<div class="col col5"></div>
+				<div class="row mainRow">
+					<div class="col col12 colT6 menuCats">
+						<div class="menu chicken">
+							<h3>Korean Fried Chook</h3>
+						</div>
+					</div>
+					<div class="col col12 colT6 menuCats">
+						<div class="menu fries">
+							<a href="fries.html"><h3>Longest Fries In Town</h3></a>
+						</div>
+					</div>
+					<div class="col col12 colT6 menuCats">
+						<div class="menu calamari">
+							<h3>Calamari</h3>
+						</div>
+					</div>
+				</div>
+				
 			</div>
-			<div class="row">
-				<div class="col col5 align red block top">
-					<a href="fries.html"><img class="menu-images" src="images/longest.png" alt="Longest Fries In Town"></a>
-				</div>
-				<div class="col col5 offset1 red block top">
-					<a href="#"><img class="menu-images" src="images/calamari.png" alt="Calamari"></a>
-				</div>
-				<div class="col col5 offset4 red block bottom">
-					<a href="#"><img class="menu-images" src="images/chicken.png" alt="Korean Fried Chook"></a>
+			<div class="col col12 colT4 cart">
+				<div class="cartContent">
+					<div class="row">
+						<div class="col col12 colT12">
+							<h4>Order</h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col col12 colT12">
+							<h5>Payment Options:</h5>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col col6 colT6">
+							<div class="btn">
+								<a href="card.html">Card</a>
+							</div>
+						</div>
+						<div class="col col6 colT6">
+							<div class="btn">
+								<a href="#">Cash</a>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-
-		<div class="order offset1 col col2">
-			<h3>Order</h3>
-			<button class="btn-pay" type="button">CASH</button>
-			<a href="card.html"><button class="btn-pay" type="button">CARD</button></a>
-		</div>
-		<script src="js/script.js"></script>
-	</body>
+	</div>
+	<script src="js/script.js"></script>
+</body>
 </html>
