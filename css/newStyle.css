@@ -244,7 +244,11 @@ img {
   width: 100%; }
 
 h4 {
-  text-align: center; }
+  text-align: center;
+  font-size: 25px;
+  margin-top: 5%;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif; }
 
 .container {
   max-width: 1200px;
@@ -259,6 +263,14 @@ h4 {
       text-align: center; }
       .container .logoRow .col .btn-return {
         display: none; }
+  .container .fas {
+    font-size: 30px;
+    background-color: #DB3535;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    padding-top: 7px;
+    border-radius: 5px; }
   .container .mainRow {
     height: 70%; }
   .container .main {
@@ -278,7 +290,8 @@ h4 {
         align-items: center;
         font-family: "Roboto", sans-serif;
         color: white;
-        font-size: 25px; }
+        font-size: 25px;
+        text-transform: uppercase; }
       .container .main .menuCats .menuSnacks {
         background-image: url("../images/fries2.png");
         height: 100%;
@@ -288,7 +301,8 @@ h4 {
         align-items: center;
         font-family: "Roboto", sans-serif;
         color: white;
-        font-size: 25px; }
+        font-size: 25px;
+        text-transform: uppercase; }
         .container .main .menuCats .menuSnacks a {
           text-decoration: none;
           color: white; }
@@ -301,7 +315,8 @@ h4 {
         align-items: center;
         font-family: "Roboto", sans-serif;
         color: white;
-        font-size: 25px; }
+        font-size: 25px;
+        text-transform: uppercase; }
       .container .main .menuCats .menuDesserts {
         background-image: url("../images/waffles.png");
         height: 100%;
@@ -311,7 +326,8 @@ h4 {
         align-items: center;
         font-family: "Roboto", sans-serif;
         color: white;
-        font-size: 25px; }
+        font-size: 25px;
+        text-transform: uppercase; }
   .container .cart {
     display: none; }
 
@@ -324,12 +340,26 @@ h4 {
   .container .main .logoRow .col i {
     display: none; }
   .container .main .logoRow .col .btn-return {
-    display: block; }
+    display: block;
+    height: 30%; }
   .container .cart {
     display: block;
     height: 80%; }
     .container .cart .cartContent {
       background-color: #FFEFB7;
-      height: 100%; } }
+      height: 100%;
+      position: relative; }
+      .container .cart .cartContent h5 {
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        font-size: 15px;
+        font-family: "Roboto", sans-serif; }
+      .container .cart .cartContent .btn-pay {
+        background-color: #FFEFB7;
+        color: white;
+        font-family: "Roboto", sans-serif;
+        height: 100%;
+        width: 100%; } }
 
 /*# sourceMappingURL=newStyle.css.map */
